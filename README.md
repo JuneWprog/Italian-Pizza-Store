@@ -143,6 +143,19 @@ SECRET="<secret key for encryption>"```
 e. To start the server, execute ```npm start```
 f. Application server is accessible now at [link](http://localhost:5000/).
 
+### Iteration4 Features
+
+1. Added CRUD operations of categories for administration.-Jun Wang
+2. Added Search Orders feature for administration-Jun Wang
+
+
+### Quick Peek on Iteration 4
+
+![image](https://user-images.githubusercontent.com/77699526/177221374-bcc11977-ffe1-4cd2-b528-62215fdeddca.png)
+![image](https://user-images.githubusercontent.com/77699526/177221380-ecc6d429-2e1c-4590-85fb-1f9570dce1ea.png)
+![image](https://user-images.githubusercontent.com/77699526/177221391-f67cb0a0-4a2a-4edb-9a0a-5ad4fc7f571b.png)
+
+
 ### Assumptions
 
 NA
