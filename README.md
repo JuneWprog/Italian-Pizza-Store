@@ -4,11 +4,11 @@ Course CS5610 Final Project
 
 This repo represents the final project for CS 5610, the Summer 2022 Edition!
 
-**Name:** Komal Shah, Jun Wang
+**Name:**  Jun Wang, Komal Shah
 
-**Email:** shah.koma@northeastern.edu, wang.jun6@northeastern.edu
+**Email:**  wang.jun6@northeastern.edu, shah.koma@northeastern.edu
 
-**Preferred Name:** Komal, June
+
 
 ### About/Overview
 
