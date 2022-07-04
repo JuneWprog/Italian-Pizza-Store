@@ -118,7 +118,8 @@ All the users need to login before they can place an order. Once logged in they 
 ![image](https://user-images.githubusercontent.com/98058572/176553172-572bcf71-5b30-4a1f-83b1-3685802bb88f.png)
 
 3.Error Handling
-![image](https://user-images.githubusercontent.com/98058572/176553485-218757ef-bde3-4da6-9dac-8f221e81ddb0.png)
+![image](https://user-images.githubusercontent.com/77699526/177221609-55e45d45-cb3b-4180-bda9-b13464997908.png)
+
 
 ### Setup Instruction
 
@@ -150,9 +151,11 @@ f. Application server is accessible now at [link](http://localhost:5000/).
 
 
 ### Quick Peek on Iteration 4
-
+1. Add Category
 ![image](https://user-images.githubusercontent.com/77699526/177221374-bcc11977-ffe1-4cd2-b528-62215fdeddca.png)
+2. Edit Category
 ![image](https://user-images.githubusercontent.com/77699526/177221380-ecc6d429-2e1c-4590-85fb-1f9570dce1ea.png)
+3.Search Order
 ![image](https://user-images.githubusercontent.com/77699526/177221391-f67cb0a0-4a2a-4edb-9a0a-5ad4fc7f571b.png)
 
 
