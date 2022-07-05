@@ -144,7 +144,7 @@ All the users need to login before they can place an order. Once logged in they 
 1. Clone the [github repo](https://github.com/shah-komal/cs5610-project.git) to install the application.
 
 2. **Setup Client**
-3. 
+
 a. Open Terminal and ```cd client```.
 
 b. Execute ```npm install```
@@ -158,7 +158,7 @@ e. To start the UI, execute ```npm start```
 f. Application UI is accessible now at [link](http://localhost:3000/).
 
 3. **Setup Server**
-4. 
+ 
 a. Open Terminal and ```cd server```.
 
 b. Execute ```npm install```
