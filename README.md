@@ -163,9 +163,34 @@ e. To start the server, execute ```npm start```
 f. Application server is accessible now at [link](http://localhost:5000/).
 
 ### Deploy to Heroku
-1. <code> cd client && npm run build</code>
-2. 
+1. Build the frontend(client) 
+  a. on linux 
+     <code> cd client && npm run build</code>
+  b. on windows
+     change client/package.json 
+     "build": "rm -rf ../server/public/build; react-scripts build; mv build ../server/public",
+     to 
+     "build": "rmdir /s ../server/public/build && react-scripts build &&  mv build ../server/public",
+      <code>npm run build</code>
+ 2. go to backend(server)
+      <code>cd server</code>
+      a. adding a file name as Procifile with content "web: npm start"
+      b. login heroku
+  <code>heroku login</code>
+  c.  create a heroku app
+  <code>heroku create app-name</code>
+  d. push code to git
+    <code>git init</code>
+    <code>heroku git:remote -a app-name </code>
+        <code>git add .</code>
 
+    <code>git commit -am "itatlian pizza code"</code>
+
+    <code>git push heroku master</code>
+
+
+
+  
 
 ### Assumptions
 
