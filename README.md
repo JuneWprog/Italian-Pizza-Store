@@ -40,11 +40,11 @@ All the users need to login before they can place an order. Once logged in they 
 
 ### Iteration 1
 
-1.Built project structure
-2.Created React components (Header, Footer, Navigation(Links), Menu DishList, DishDetail)
-3.Defined React Routes
-4.Defined Mongodb Schema for collections
-5.Build Modules to fulfill CRUD operations
+1. Built project structure
+2. Created React components (Header, Footer, Navigation(Links), Menu DishList, DishDetail)
+3. Defined React Routes
+4. Defined Mongodb Schema for collections
+5. Build Modules to fulfill CRUD operations
 
 ### Iteration1 Contributions
 
@@ -86,13 +86,13 @@ All the users need to login before they can place an order. Once logged in they 
 
 ### Quick Peek On Iteration2
 
-1.Responsive design
+1. Responsive design
 ![image](https://user-images.githubusercontent.com/77699526/174471167-eea532e5-869e-471a-9ce3-10f188984a17.png)
 
-2.Shopping cart
+2. Shopping cart
 ![image](https://user-images.githubusercontent.com/77699526/174687918-cccc2921-89e5-40dd-9d46-41acd372babf.png)
 
-3.Payment
+3. Payment
 ![image](https://user-images.githubusercontent.com/77699526/175199330-eb07d325-16d0-493e-8241-8c82b2211638.png)
 
 ### Iteration3 Features
@@ -112,14 +112,31 @@ All the users need to login before they can place an order. Once logged in they 
 
 ### Quick Peek On Iteration3
 
-1.Home Page
+1. Home Page
 ![image](https://user-images.githubusercontent.com/98058572/176552952-02c84bbf-8100-4c81-a979-497424eeb1e9.png)
 
-2.Search Feature
+2. Search Feature
 ![image](https://user-images.githubusercontent.com/98058572/176553172-572bcf71-5b30-4a1f-83b1-3685802bb88f.png)
 
-3.Error Handling
+3. Error Handling
 ![image](https://user-images.githubusercontent.com/77699526/177221609-55e45d45-cb3b-4180-bda9-b13464997908.png)
+
+
+
+### Iteration4 Features
+
+1. Added CRUD operations of categories for administration.-Jun Wang
+2. Added Search Orders feature for administration-Jun Wang
+
+
+### Quick Peek on Iteration 4
+1. Add Category
+![image](https://user-images.githubusercontent.com/77699526/177221374-bcc11977-ffe1-4cd2-b528-62215fdeddca.png)
+2. Edit Category
+![image](https://user-images.githubusercontent.com/77699526/177221380-ecc6d429-2e1c-4590-85fb-1f9570dce1ea.png)
+3. Search Order
+![image](https://user-images.githubusercontent.com/77699526/177221391-f67cb0a0-4a2a-4edb-9a0a-5ad4fc7f571b.png)
+
 
 
 ### Setup Instruction
@@ -148,22 +165,6 @@ f. Application server is accessible now at [link](http://localhost:5000/).
 ###Deploy to Heroku
 step1. in /client 
 <code> npm run build</code>
-
-
-
-### Iteration4 Features
-
-1. Added CRUD operations of categories for administration.-Jun Wang
-2. Added Search Orders feature for administration-Jun Wang
-
-
-### Quick Peek on Iteration 4
-1. Add Category
-![image](https://user-images.githubusercontent.com/77699526/177221374-bcc11977-ffe1-4cd2-b528-62215fdeddca.png)
-2. Edit Category
-![image](https://user-images.githubusercontent.com/77699526/177221380-ecc6d429-2e1c-4590-85fb-1f9570dce1ea.png)
-3.Search Order
-![image](https://user-images.githubusercontent.com/77699526/177221391-f67cb0a0-4a2a-4edb-9a0a-5ad4fc7f571b.png)
 
 
 ### Assumptions
