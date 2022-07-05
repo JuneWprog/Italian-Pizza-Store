@@ -75,7 +75,3 @@ test("display register link", async() => {
 
 });
 
-// test("Throw errors when users signed in", () => {
-//   expect(() => render(<Login signedInUser={normalUser} />, { wrapper: BrowserRouter }))
-//     .toThrow("Cannot read properties of null (reading 'focus')");
-// });

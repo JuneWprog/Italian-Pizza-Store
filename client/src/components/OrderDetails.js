@@ -1,3 +1,8 @@
+/**
+ * Details of one specific order
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect, Fragment } from "react";
 import Table from 'react-bootstrap/Table';
 import { useParams, Navigate } from "react-router-dom";

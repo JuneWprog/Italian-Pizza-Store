@@ -1,3 +1,8 @@
+/**
+ * User sign in link and links for signed in user (profile, logout, cart, orders)
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import { BsPersonCircle } from "react-icons/bs";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { Link, useNavigate, Navigate } from "react-router-dom";

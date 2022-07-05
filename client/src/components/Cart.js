@@ -1,3 +1,8 @@
+/**
+ * Display shoppping cart items
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React from 'react';
 import Button from "react-bootstrap/Button";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";

@@ -1,3 +1,10 @@
+/**
+ * Dish details of a specific dish(product)
+ * General users can see the details of the dish and add it to the cart.
+ * Admin users can edit and delete the dish.
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";

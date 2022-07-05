@@ -1,3 +1,9 @@
+/**
+ * Controller for CRUD operations on user
+ * Authentication and authorization is done here
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 var User = require('../models/userModel');
 const { check, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");

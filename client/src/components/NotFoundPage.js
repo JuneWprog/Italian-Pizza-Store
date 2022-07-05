@@ -1,3 +1,8 @@
+/**
+ * Default page for the 404 page 
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React from 'react';
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";

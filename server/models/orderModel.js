@@ -1,3 +1,8 @@
+/**
+ * Schema for Order
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({

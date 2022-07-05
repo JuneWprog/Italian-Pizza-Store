@@ -17,6 +17,8 @@ code {
 a{
   text-decoration: none;
 }
+
+
 li{
   list-style: none;
 }
@@ -34,12 +36,12 @@ h2, h3,h4,h5,p,a{
   display:flex;
 }
 .logo{
-  width:130px;
+  width:120px;
 }
 .app-logo {
   display:inline-block;
   width: 110px;
-  margin: 5px 20px;
+  margin: 5px;
 }
 .searchContainer {
   display:flex;
@@ -99,24 +101,37 @@ input[type=number] {
   flex-direction: column;
   width:80vw;
   margin: 2rem auto;
-  background-color: rgba(209, 206, 206, 0.201);
+  background-color: rgba(209, 206, 206, 0.109);
   border:rgb(170, 170, 170) 1px solid;
 
 }
 .categoryContainer:hover{
-  background-color: rgba(209, 206, 206, 0.5);
+  background-color: rgba(209, 206, 206, 0.3);
 }
 .categoryContainer .imgContainer{
   float: left;  
 }
 
+.editDeleteCategory{
+  display:flex;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.categoryContainer:first-of-type a{
+  text-decoration:none;
+}
+
+
 .categoryTitle{
 
   font-family: 'Cairo', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   text-align: center;
   margin-top:2rem;
+  display:block;
+  color:#212529;
+
 }
 
 .logOut button{
@@ -312,7 +327,7 @@ input[type=number] {
 .badge{
   position:relative;
   top:-0.7rem;
-  left:-0.5rem;
+  left:-1rem;
   font-size: 0.65rem!important;
 }
 
@@ -328,7 +343,7 @@ input[type=number] {
 .orderContainer{
   display:flex;
   flex-direction:column;
-  width:80vw;
+  width:70vw;
   margin: auto;
 }
 .storeName{
@@ -336,7 +351,7 @@ input[type=number] {
   font-weight: 600;
   text-align: center;
 }
-.storeName, .orderDate{
+.storeName, .orderDate, .orderNumber{
   margin:auto;
   margin-top:1rem;
 }
@@ -365,7 +380,14 @@ input[type=number] {
   width:20rem;
 }
 
+.editDeleteCategory button{
 
+  margin-left:1rem;
+  background-color: none;
+}
+.editDeleteCategory button:hover{
+  color: #ddd;
+}
 
 @media screen and (min-width: 576px) {
   .orderContainer{
@@ -379,11 +401,12 @@ input[type=number] {
   .navContainer a{
     margin-right:-1rem;
   }
+
  
 }
 @media screen and (min-width: 1024px) { 
   .orderContainer{
-    width:80vw;
+    width:60vw;
   }
   .cartDetailContainer{
     width:80vw;
@@ -416,6 +439,7 @@ input[type=number] {
   .checkOutBtn, .addMoreBtn{
     width:25vw;
   }
+
   
 }
 

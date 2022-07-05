@@ -1,3 +1,8 @@
+/**
+ * Carousel component for display images(promotions)
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import {Carousel} from 'react-bootstrap'
 import image1 from '../assets/pizzaDisplay1.jpg';
 import image2 from '../assets/pizzaDisplay2.jpg';

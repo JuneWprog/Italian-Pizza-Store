@@ -1,3 +1,8 @@
+/**
+ * A button in header link to search page
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import { BsSearch } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
@@ -6,7 +11,7 @@ export default function SearchButton(props) {
   let navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/search`);
+    navigate(`/searchDish`);
   }
 
   return (

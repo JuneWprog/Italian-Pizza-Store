@@ -51,12 +51,6 @@ test("Dish name input changes as admin types", async () => {
 });
 
 
-// test("Display Category default value",  () => {
-//   render(<UpdateDish signedInUser={adminUser} />, { wrapper: BrowserRouter });
-//   const categorySelect = screen.getByLabelText(/category \*/i)
-//   expect(categorySelect.value).toBe('Pizza and Pasta') //default value
-  
-// });
 
 test("Category value changes as users select",  () => {
   render(<UpdateDish signedInUser={adminUser} />, { wrapper: BrowserRouter });
@@ -182,31 +176,3 @@ test("cancel button display for admin", async () => {
   expect(cancelButton).toBeInTheDocument(); 
 });
 
-
-
-// test('rendering and submitting form', async () => {
-//   const handleSubmit = jest.fn()
-//   render(<AddDish signedInUser={adminUser} />, { wrapper: BrowserRouter })
-
-
-//   await userEvent.type(screen.getByLabelText(/dish name \*/i), 'pizza')
-//   await userEvent.type(screen.getByLabelText(/category \*/i), 'Pizza and Pasta')
-//   await userEvent.type(screen.getByLabelText(/Image \*/i), 'pizzaDisplay3.jpg')
-//   await userEvent.type(screen.getByLabelText(/description \*/i), 'pizzaDisplay')
-//   await userEvent.type(screen.getByLabelText(/price \$ \*/i), '3.5')
-//   await userEvent.type(screen.getByLabelText(/spice\*/i), 'Hot')
-
-//   await userEvent.click(screen.getByRole('button', {name: /submit/i}))
-
-//   // await waitFor(() =>
-//     expect(handleSubmit).toHaveBeenCalledTimes(1);
-//     // With({
-//     //   name: 'pizza',
-//     //   category: 'Pizza and Pasta',
-//     //   image: 'pizzaDisplay3.jpg',
-//     //   description: 'pizzaDisplay',
-//     //   price: 3.5,
-//     //   spice: 'Hot'
-//     // }),
-//   // )
-// })

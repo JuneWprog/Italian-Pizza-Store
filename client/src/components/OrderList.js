@@ -1,3 +1,8 @@
+/**
+ * Orders history for one specific user
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useEffect, useState } from "react";
 import Order from "./Order";
 import { Navigate } from "react-router-dom";

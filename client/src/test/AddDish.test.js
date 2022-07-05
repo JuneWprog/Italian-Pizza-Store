@@ -171,32 +171,6 @@ test("Throw errors when not admin", () => {
 });
   
 
-// test('rendering and submitting form', async () => {
-//   const handleSubmit = jest.fn()
-//   render(<AddDish signedInUser={adminUser} />, { wrapper: BrowserRouter })
-
-
-//   await userEvent.type(screen.getByLabelText(/dish name \*/i), 'pizza')
-//   await userEvent.type(screen.getByLabelText(/category \*/i), 'Pizza and Pasta')
-//   await userEvent.type(screen.getByLabelText(/Image \*/i), 'pizzaDisplay3.jpg')
-//   await userEvent.type(screen.getByLabelText(/description \*/i), 'pizzaDisplay')
-//   await userEvent.type(screen.getByLabelText(/price \$ \*/i), '3.5')
-//   await userEvent.type(screen.getByLabelText(/spice\*/i), 'Hot')
-
-//   await userEvent.click(screen.getByRole('button', {name: /submit/i}))
-
-//   // await waitFor(() =>
-//     expect(handleSubmit).toHaveBeenCalledTimes(1);
-//     // With({
-//     //   name: 'pizza',
-//     //   category: 'Pizza and Pasta',
-//     //   image: 'pizzaDisplay3.jpg',
-//     //   description: 'pizzaDisplay',
-//     //   price: 3.5,
-//     //   spice: 'Hot'
-//     // }),
-//   // )
-// })
 
 
 

@@ -1,3 +1,8 @@
+/**
+ * Display a specific order
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { Fragment } from "react";
 import Table from 'react-bootstrap/Table';
 
@@ -17,6 +22,8 @@ export default function Order({ order }) {
       <div className="orderContainer">
         <p className="storeName">Italian Pizza</p>
         <p className="orderDate">{new Date(createdOn).toDateString()}</p>
+        <p className="orderNumber">Order Number: {order._id}</p>
+        <p className="orderNumber">Customer Address: {order.address}</p>
 
         <Table striped bordered hover variant="light">
           <thead>

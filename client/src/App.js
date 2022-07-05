@@ -7,6 +7,7 @@ import Home from "./components/Home.js";
 import AboutUs from "./components/AboutUs.js";
 import ContactUs from "./components/ContactUs.js";
 import Menus from "./components/Menus.js";
+import AddCategory from "./components/AddCategory.js";
 import AddDish from "./components/AddDish.js";
 import DishList from "./components/DishList.js";
 import DishDetails from "./components/DishDetails.js";
@@ -20,9 +21,12 @@ import OrderDetails from "./components/OrderDetails";
 import Payment from "./components/Payment";
 import Search from "./components/Search";
 import NotFoundPage from "./components/NotFoundPage.js";
+import UpdateCategory from "./components/UpdateCategory.js";
+import SearachOrders from "./components/SearachOrders.js";
 
 export default function App() {
-  let cartFromLocalStorage = JSON.parse(localStorage.getItem("pizzajoint-cartItems")) || [];
+  let cartFromLocalStorage =
+    JSON.parse(localStorage.getItem("pizzajoint-cartItems")) || [];
   let userLocal = localStorage.getItem("pizzajoint-user");
   userLocal = userLocal ? JSON.parse(userLocal) : null;
   const [user, setUser] = useState(userLocal);
@@ -81,8 +85,9 @@ export default function App() {
             element={
               <>
                 <Home />
-                <Menus />
+                <Menus signedInUser={user} />
                 <AboutUs />
+                <ContactUs />
                 <Footer />
               </>
             }
@@ -130,6 +135,24 @@ export default function App() {
             }
           ></Route>
           <Route
+            path="/menus/addCategory"
+            element={
+              <>
+                <AddCategory signedInUser={user} />
+                <Footer />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/menus/:categoryId/update"
+            element={
+              <>
+                <UpdateCategory signedInUser={user} />
+                <Footer />
+              </>
+            }
+          ></Route>
+          <Route
             path="/dishes/:dishId"
             element={
               <>
@@ -152,14 +175,14 @@ export default function App() {
             path="/menus"
             element={
               <>
-                <Menus />
+                <Menus signedInUser={user} />
                 <Footer />
               </>
             }
           />
 
           <Route
-            path="/search"
+            path="/searchDish"
             element={
               <>
                 <Search />
@@ -169,7 +192,7 @@ export default function App() {
           />
 
           <Route
-            path="/search/:criteria"
+            path="/searchDish/:criteria"
             element={
               <>
                 <Search onAdd={onAdd} />
@@ -196,7 +219,8 @@ export default function App() {
                   cartItems={cartItems}
                   onAdd={onAdd}
                   onRemove={onRemove}
-                  setOrder={setOrder} />
+                  setOrder={setOrder}
+                />
                 <Footer />
               </>
             }
@@ -206,8 +230,7 @@ export default function App() {
             path="/login"
             element={
               <>
-                <Login setLoggedInUser={setLoggedInUser}
-                  signedInUser={user} />
+                <Login setLoggedInUser={setLoggedInUser} signedInUser={user} />
                 <Footer />
               </>
             }
@@ -255,6 +278,26 @@ export default function App() {
               </>
             }
           />
+
+            <Route
+            path="/searchOrder"
+            element={
+              <>
+                <SearachOrders />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+          path = "/searchOrder/:criteria"
+          element ={
+           <>
+            <SearachOrders signedInUser={user} />
+            <Footer />
+           </>       
+          }
+           />
 
           <Route
             path="*"

@@ -1,3 +1,8 @@
+/**
+ * links and buttons in the header
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React from "react";
 import Logo from "./Logo";
 import SignInLink from "./SignInLink";

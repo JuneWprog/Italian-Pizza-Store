@@ -1,3 +1,8 @@
+/**
+ * Controller for CRUD operations on Dish
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 var Dish = require('../models/dishModel');
 var DishCategory = require("../models/dishCategoryModel");
 var ObjectId = require('mongoose').Types.ObjectId;
@@ -38,28 +43,29 @@ exports.loadDishDetails = async function (req, res) {
     }
 };
 
+
 exports.addDish = [
     upload.single("image"),
     check('name')
         .notEmpty().withMessage('Please enter a Name for the Dish.')
         .isLength({ max: 60 }).withMessage("Length of Dish Name can be 60 characters only.")
-        .isAlphanumeric("en-US", { 'ignore': ' ' }).withMessage("Dish Name should be Alphanumeric.")
+        .isAlphanumeric("en-US", { 'ignore': '\'- &' }).withMessage("Dish Name should be Alphanumeric.")
         .custom((value, { req }) => {
             if (!req.file) throw new Error("Profile Img is required");
             return true;
         }),
     check('description')
         .notEmpty().withMessage('Please enter the Description for the Dish.')
-        .isAlphanumeric("en-US", { 'ignore': '() .?!,-_:;\n\r' }).withMessage("Description should be Alphanumeric including ().?!,-_:; characters."),
+        .isAlphanumeric("en-US", { 'ignore': '\'() % .?!,-_:;\n\r' }).withMessage("Description should be Alphanumeric including ().?!,-_:; characters."),
     check('price')
         .notEmpty().withMessage('Please enter the Price for the Dish.')
         .isFloat({ min: 1 }).withMessage("Price should be Numeric and greater than $1."),
     check('spice')
         .notEmpty().withMessage('Please enter the Spice Level for the Dish.')
-        .isIn(['Mild', 'Medium', 'Hot']).withMessage("Spice Level should be Mild, Medium or Hot."),
+        .isIn(['Mild', 'Medium', 'Hot', 'None']).withMessage("Spice Level should be Mild, Medium , Hot or None."),
     check('category')
-        .notEmpty().withMessage('Please enter the Category for the Dish.')
-        .isIn(['Pizza and Pasta', 'Sides', 'Drinks', 'Desserts']).withMessage("Category should be Pizza and Pasta, Sides, Desserts or Drinks."),
+        .notEmpty().withMessage('Please enter the Category for the Dish.'),
+        // .isIn(categories).withMessage( categories),
     async function (req, res) {
         try {
             const errors = validationResult(req)
@@ -90,19 +96,19 @@ exports.updateDish = [
     check('name')
         .notEmpty().withMessage('Please enter a Name for the Dish.')
         .isLength({ max: 60 }).withMessage("Length of Dish Name can be 60 characters only.")
-        .isAlphanumeric("en-US", { 'ignore': ' ' }).withMessage("Dish Name should be Alphanumeric."),
+        .isAlphanumeric("en-US", { 'ignore': ' \' - &' }).withMessage("Dish Name should be Alphanumeric."),
     check('description')
         .notEmpty().withMessage('Please enter the Description for the Dish.')
-        .isAlphanumeric("en-US", { 'ignore': '() .?!,-_:;\n\r' }).withMessage("Description should be Alphanumeric including ().?!,-_:; characters."),
+        .isAlphanumeric("en-US", { 'ignore': '() %.?!,-_:;\'\n\r' }).withMessage("Description should be Alphanumeric including ().?!,-_:; characters."),
     check('price')
         .notEmpty().withMessage('Please enter the Price for the Dish.')
         .isFloat({ min: 1 }).withMessage("Price should be Numeric and greater than $1."),
     check('spice')
         .notEmpty().withMessage('Please enter the Spice Level for the Dish.')
-        .isIn(['Mild', 'Medium', 'Hot']).withMessage("Spice Level should be Mild, Medium or Hot."),
+        .isIn(['Mild', 'Medium', 'Hot', 'None']).withMessage("Spice Level should be Mild, Medium or Hot."),
     check('category')
-        .notEmpty().withMessage('Please enter the Category for the Dish.')
-        .isIn(['Pizza and Pasta', 'Sides', 'Drinks', 'Desserts']).withMessage("Category should be Pizza and Pasta, Sides, Desserts or Drinks."),
+        .notEmpty().withMessage('Please enter the Category for the Dish.'),
+        //.isIn(['Pizza and Pasta', 'Sides', 'Drinks', 'Desserts']).withMessage("Category should be Pizza and Pasta, Sides, Desserts or Drinks."),
     async function (req, res) {
         try {
             const errors = validationResult(req)

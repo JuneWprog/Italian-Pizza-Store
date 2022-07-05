@@ -1,3 +1,8 @@
+/**
+ * List of dishes(products) in one specific category
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect } from "react";
 import Dish from "./Dish";
 import { useParams } from "react-router-dom";

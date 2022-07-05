@@ -1,3 +1,8 @@
+/**
+ * User login 
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import jwt_decode from 'jwt-decode';

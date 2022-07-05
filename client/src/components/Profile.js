@@ -1,3 +1,8 @@
+/**
+ * User profile
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect } from "react";
 import Script from 'react-load-script';
 import { useNavigate, Navigate } from "react-router-dom";

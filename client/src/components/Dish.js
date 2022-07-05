@@ -1,3 +1,9 @@
+/**
+ * Component for one dish in the menu
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
+
 import React, { Fragment } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";

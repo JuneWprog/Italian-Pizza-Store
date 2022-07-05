@@ -1,3 +1,8 @@
+/**
+ * Static contact us page
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React from 'react'
 
 export default function ContactUs() {

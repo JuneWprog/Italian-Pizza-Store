@@ -1,3 +1,8 @@
+/**
+ * Create a new dish(product) in the database
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
 
@@ -11,10 +16,32 @@ export default function AddDish({ signedInUser }) {
   let navigate = useNavigate();
   const tableRef = useRef(null);
   const [error, setError] = useState({});
+  const [categories, setCategories]=useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    tableRef.current.focus();
-  }, []);
+    async function fetchData() {
+      try {
+        const response = await fetch("/api/menus");
+    if (!response.ok) {
+      setError(await response.json());
+      setIsLoading(false);
+      return;
+    }
+    const data = await response.json();
+    setCategories(data);
+    setIsLoading(false);
+  } catch (err) {
+    console.log(err);
+  }
+}
+tableRef.current.focus();
+fetchData();
+}, []);
+
+
+
+
   const handleSubmit = async (e) => {
     let error = {};
     let alphaNumeric = /^[a-zA-Z0-9\s]*$/;
@@ -35,8 +62,8 @@ export default function AddDish({ signedInUser }) {
       error.description = "Description should be AlphaNumeric.";
     }
 
-    if (Number(price) < 1) {
-      error.price = "Price cannot less than $1."
+    if (Number(price) < 0) {
+      error.price = "Price cannot less than $0."
     }
 
     setError(error);
@@ -52,6 +79,7 @@ export default function AddDish({ signedInUser }) {
     formData.append("spice", spice);
     formData.append("image", image);
     formData.append("description", description);
+    console.log(formData);
     try {
       const response = await fetch("/api/dishes/addDish", {
         method: "POST",
@@ -104,10 +132,13 @@ export default function AddDish({ signedInUser }) {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option value="Pizza and Pasta"> Pizza and Pasta </option>
-              <option value="Sides"> Sides</option>
-              <option value="Drinks"> Drinks</option>
-              <option value="Desserts"> Desserts</option>
+              {categories.map((category) => {
+                return (
+                  <option key={category._id} value={category.name}>
+                    {category.name}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <div className="input-container">
@@ -167,6 +198,8 @@ export default function AddDish({ signedInUser }) {
               <option value="Mild"> Mild </option>
               <option value="Medium"> Medium</option>
               <option value="Hot"> Hot</option>
+              <option value="None"> None</option>
+
             </select>
           </div>
 
@@ -178,7 +211,7 @@ export default function AddDish({ signedInUser }) {
             <button
               className="btn btn-outline-primary"
               type="submit"
-              value="Sign Up"
+              value="submit"
             >
               Submit
             </button>

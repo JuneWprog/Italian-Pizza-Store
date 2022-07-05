@@ -1,3 +1,8 @@
+/**
+ * Pay for the items in the cart 
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState } from "react";
 import Table from 'react-bootstrap/Table';
 import Button from "react-bootstrap/Button";

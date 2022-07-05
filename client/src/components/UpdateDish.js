@@ -1,3 +1,8 @@
+/**
+ * Admin user can update the dish(product) information
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect, useRef } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -206,7 +211,7 @@ export default function UpdateDish({ signedInUser }) {
             <button
               className="btn btn-outline-primary"
               type="submit"
-              value="Sign Up"
+              value="Submit"
             >
               Submit
             </button>

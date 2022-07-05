@@ -1,3 +1,8 @@
+/**
+ * Static page for the about us page
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 export default function AboutUs() {
   return (
     <div className="aboutContainer">

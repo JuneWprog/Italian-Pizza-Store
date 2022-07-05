@@ -1,8 +1,13 @@
+/**
+ * Responsive navigation menu
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect } from 'react'
 import Category from './Category'
 
 
-export default function Menus() {
+export default function Menus({signedInUser}) {
 
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -35,7 +40,7 @@ export default function Menus() {
               (
                 <ul className='menus'>
                   {categories.map((item) => (
-                    <Category key={item._id} category={item} />
+                    <Category key={item._id} category={item} signedInUser={signedInUser} />
                   ))}
                 </ul>
               )

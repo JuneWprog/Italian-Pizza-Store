@@ -55,7 +55,7 @@ const adminUser={
 "accessLevel": 1
 }
 
-const normalUser={
+const generalUser={
 "accessLevel": 0
 }
   

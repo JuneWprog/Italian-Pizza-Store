@@ -1,3 +1,8 @@
+/**
+ * Schema for user
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 const mongoose = require('mongoose');
 var uniqueValidator = require('mongoose-unique-validator');
 

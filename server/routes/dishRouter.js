@@ -1,3 +1,8 @@
+/**
+ * Routes for dishes
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 const express = require("express");
 const router = express.Router();
 const dishController = require("../controller/dishController");

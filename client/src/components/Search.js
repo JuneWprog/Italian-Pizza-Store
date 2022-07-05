@@ -1,3 +1,9 @@
+/**
+ * Fuzzy search for dishes(products) based on the search query 
+ * critia can be category, dish name, description,spice level.
+ * @author Jun Wang (wang.jun6@northeastern.edu)
+ * 
+ */
 import React, { useState, useEffect } from 'react';
 import Dish from "./Dish";
 import { useParams, useNavigate } from "react-router-dom";
@@ -5,7 +11,7 @@ import { useParams, useNavigate } from "react-router-dom";
 export default function Search({ onAdd }) {
 
     let navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [results, setResults] = useState([]);
     const [criteria, setCriteria] = useState(useParams().criteria || "");
     const [error, setError] = useState({});
@@ -14,8 +20,8 @@ export default function Search({ onAdd }) {
         async function fetchData() {
             try {
                 if (criteria) {
-                    navigate(`/search/${criteria}`);
-                    const response = await fetch(`/api/search/${criteria}`);
+                    navigate(`/searchDish/${criteria}`);
+                    const response = await fetch(`/api/searchDish/${criteria}`);
                     if (!response.ok) {
                         setError(await response.json());
                         setIsLoading(false);
@@ -25,7 +31,7 @@ export default function Search({ onAdd }) {
                     setResults(data);
                     setIsLoading(false);
                 } else {
-                    navigate(`/search`);
+                    navigate(`/searchDish`);
                     setResults([]);
                 }
             } catch (err) {
