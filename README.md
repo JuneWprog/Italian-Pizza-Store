@@ -144,53 +144,73 @@ All the users need to login before they can place an order. Once logged in they 
 1. Clone the [github repo](https://github.com/shah-komal/cs5610-project.git) to install the application.
 
 2. **Setup Client**
+3. 
 a. Open Terminal and ```cd client```.
+
 b. Execute ```npm install```
+
 c. Create .env file ```touch .env```
+
 d. Add following parameters: ```REACT_APP_SECRET="<secret key for encryption>"```
+
 e. To start the UI, execute ```npm start```
+
 f. Application UI is accessible now at [link](http://localhost:3000/).
 
 3. **Setup Server**
+4. 
 a. Open Terminal and ```cd server```.
+
 b. Execute ```npm install```
+
 c. Create .env file ```touch .env```
+
 d. Add following parameters: ```DB_URI = "<mongodb URI>"
+
 PORT = 5000
 TOKEN_KEY = "<token key for hashing>"
 SECRET="<secret key for encryption>"```
+
 e. To start the server, execute ```npm start```
+
 f. Application server is accessible now at [link](http://localhost:5000/).
 
 ### Deploy to Heroku
 1. Build the frontend(client) <br/>
   a. on linux <br/>
-     <code> cd client && npm run build</code>
+     ``` cd client && npm run build```
+     
   b. on windows<br/>
+  
      change client/package.json 
      "build": "rm -rf ../server/public/build; react-scripts build; mv build ../server/public",
      to 
      "build": "rmdir /s ../server/public/build && react-scripts build &&  mv build ../server/public",
-      <code>npm run build</code>
+     then run
+      ```npm run build```
+      
  2. go to backend(server)<br/>
-      <code>cd server</code>
+     ```cd ..\server```
+      
       a. adding a file name as Procifile with content "web: npm start"<br/>
+      
       b. login heroku<br/>
-  <code>heroku login</code>
-  c.  create a heroku app<br/>
-  <code>heroku create app-name</code>
-  d. push code to git<br/>
-    <code>git init</code>
-    <code>heroku git:remote -a app-name </code>
-     <code>git add .</code>
-
-    <code>git commit -am "itatlian pizza code"</code>
-
-    <code>git push heroku master</code>
-
-
-
+      ```heroku login```
   
+      c.  create a heroku app<br/>
+      ```heroku create app-name```
+  
+       d. push code to git
+    ```git init```
+    
+   ```heroku git:remote -a app-name ``` 
+   
+    ```git add .```
+
+   ```git commit -am "itatlian pizza code"```
+
+  ```git push heroku master```
+
 
 ### Assumptions
 
