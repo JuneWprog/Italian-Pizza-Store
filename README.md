@@ -8,16 +8,16 @@ This repo represents the final project for CS 5610, the Summer 2022 Edition!
 
 **Email:**  wang.jun6@northeastern.edu, shah.koma@northeastern.edu
 
-
-
 ### About/Overview
 
 This is a "Software as a Service" web application performing CRUD operations based on the MERN stack.
 MERN(Mongodb, Express, React.js, Node.js). The client side application allows users to connect with a chain restaurant, browse its menu and place orders. The administrator side application allows administrators to maintain the menu. When signing up users are assisted to save the address in the correct format using Google Maps API.
 
 ### Application URL
-
+Version 1.0
 [Pizza Joint](https://pizza-joint.herokuapp.com/)
+Version 2.0 Adding Category feature, Search Order feature
+[Italian Pizza](https://italian-pizza.herokuapp.com/)
 
 ### Demo URL
 
