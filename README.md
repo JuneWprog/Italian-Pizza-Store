@@ -162,9 +162,9 @@ SECRET="<secret key for encryption>"```
 e. To start the server, execute ```npm start```
 f. Application server is accessible now at [link](http://localhost:5000/).
 
-###Deploy to Heroku
-step1. in /client 
-<code> npm run build</code>
+### Deploy to Heroku
+1. <code> cd client && npm run build</code>
+2. 
 
 
 ### Assumptions
