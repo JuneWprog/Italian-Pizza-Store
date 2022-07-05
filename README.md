@@ -145,6 +145,12 @@ SECRET="<secret key for encryption>"```
 e. To start the server, execute ```npm start```
 f. Application server is accessible now at [link](http://localhost:5000/).
 
+###Deploy to Heroku
+step1. in /client 
+<code> npm run build</code>
+
+
+
 ### Iteration4 Features
 
 1. Added CRUD operations of categories for administration.-Jun Wang
