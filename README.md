@@ -201,15 +201,15 @@ f. Application server is accessible now at [link](http://localhost:5000/).
       ```heroku create app-name```
   
        d. push code to git
-    ```git init```
+       ```git init```
     
-   ```heroku git:remote -a app-name ``` 
+       ```heroku git:remote -a app-name ``` 
    
-    ```git add .```
+       ```git add .```
 
-   ```git commit -am "itatlian pizza code"```
+       ```git commit -am "itatlian pizza code"```
 
-  ```git push heroku master```
+       ```git push heroku master```
 
 
 ### Assumptions
