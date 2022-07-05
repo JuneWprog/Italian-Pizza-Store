@@ -180,7 +180,7 @@ f. Application server is accessible now at [link](http://localhost:5000/).
   a. on linux <br/>
      ``` cd client && npm run build```
      
-  b. on windows<br/>
+     b. on windows<br/>
   
      change client/package.json 
      "build": "rm -rf ../server/public/build; react-scripts build; mv build ../server/public",
