@@ -11,7 +11,7 @@ This repo represents the final project for CS 5610, the Summer 2022 Edition!
 ### About/Overview
 
 This is a "Software as a Service" web application performing CRUD operations based on the MERN stack.
-MERN(Mongodb, Express, React.js, Node.js). The client side application allows users to connect with a chain restaurant, browse its menu and place orders. The administrator side application allows administrators to maintain the menu. When signing up users are assisted to save the address in the correct format using Google Maps API.
+MERN(Mongodb, Express, React.js, Node.js). The client-side application allows users to connect with a chain restaurant, browse its menu, and place orders. The administrator-side application allows administrators to maintain the menu. When signing up users are assisted to save the address in the correct format using Google Maps API.
 
 ### Application URL
 Version 1.0
@@ -97,12 +97,12 @@ All the users need to login before they can place an order. Once logged in they 
 
 ### Iteration3 Features
 
-1. Added errors for user's invalid input
+1. Added errors for the user's invalid input
 2. Tested react components
 3. Improved Accessibility
 4. Added Search Feature for searching dishes
 
-### Contribution on Iteration3
+### Contribution to Iteration3
 
 1. Built Error check for user input - Komal Shah
 2. Tested react components - Jun Wang & Komal Shah
@@ -141,7 +141,7 @@ All the users need to login before they can place an order. Once logged in they 
 
 ### Setup Instruction
 
-1. Clone the [github repo](https://github.com/shah-komal/cs5610-project.git) to install the application.
+1. Clone the [github repo]([https://github.com/JuneWprog/restaurant-ordering]) to install the application.
 
 2. **Setup Client**
 
@@ -173,11 +173,11 @@ SECRET="<secret key for encryption>"```
 
 e. To start the server, execute ```npm start```
 
-f. Application server is accessible now at [link](http://localhost:5000/).
+f. The application server is accessible now at [link](http://localhost:5000/).
 
 ### Deploy to Heroku
 1. Build the frontend(client) <br/>
-  a. on linux <br/>
+  a. on Linux <br/>
      ``` cd client && npm run build```
      
      b. on windows<br/>
