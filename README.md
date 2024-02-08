@@ -1,4 +1,4 @@
-# cs5610-project
+# Pizza-Store
 
 Course CS5610 Final Project
 
