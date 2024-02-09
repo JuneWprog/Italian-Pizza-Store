@@ -1,6 +1,5 @@
-# Pizza-Store
+# Pizza-Resturant
 
-Course CS5610 Final Project
 
 This repo represents the final project for CS 5610, the Summer 2022 Edition!
 
