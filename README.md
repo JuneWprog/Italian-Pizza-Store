@@ -1,8 +1,5 @@
 # Pizza-Resturant
 
-
-This repo represents the final project for CS 5610, the Summer 2022 Edition!
-
 **Name:**  Jun Wang, Komal Shah
 
 **Email:**  wang.jun6@northeastern.edu, shah.koma@northeastern.edu
